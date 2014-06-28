@@ -1,0 +1,10 @@
+body {
+    padding-top: 80px;
+}
+.centered {
+    padding: 40px 15px;
+    text-align: center;
+}
+.section-title {
+    font-size: 2em;
+}
