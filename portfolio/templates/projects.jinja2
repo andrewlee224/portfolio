@@ -1,0 +1,23 @@
+{% extends "base.jinja2" %}
+{% block title %}Projects{% endblock %}
+
+{% block sidemenu %}
+<!-- Project menu -->
+<div class="col-sm-3">
+  <div class="list-group">
+    <a href="#" class="list-group-item">RNA Pairs</a>
+    <a href="#" class="list-group-item">Invest.py</a>
+    <a href="#" class="list-group-item">Bandmates</a>
+    <a href="#" class="list-group-item">Signal Monitor</a>
+    <a href="#" class="list-group-item">Drug Scheduler</a>
+  </div>
+</div>
+<!-- End project menu -->
+{% endblock sidemenu %}
+
+{% block content %}
+<div class="col-sm-9">
+    <div class="section-title">{% block projtitle %}My projects{% endblock %}</div>
+    {% block projcontent %}Here you can find descriptions of projects I have completed.{% endblock %}
+</div>
+{% endblock content %}
