@@ -8,3 +8,8 @@ body {
 .section-title {
     font-size: 2em;
 }
+
+.big-sign {
+    font-size: 4em;
+    color: lightblue;
+}
