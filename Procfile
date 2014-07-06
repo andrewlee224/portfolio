@@ -1,1 +1,1 @@
-web: gunicorn --paste production.ini -b :8080 --chdir ./
+web: gunicorn --paste production.ini -b :$PORT --chdir ./
