@@ -1,0 +1,23 @@
+{% extends "subproject.jinja2" %}
+{% block projtitle %}Drug Scheduler{% endblock %}
+
+{% block projcontent %}
+Mobile application intended for managing drug dosage schedules in a hospital environment. Drug schedules are stored on a remote server and downloaded as JSON files.
+<br /><br />
+<h5>Highlights / Key Challenges</h5>
+<ul>
+<li>Establishing connectivity with remote server</li>
+<li>Parsing JSON files and creating objects based on suitable data models</li>
+<li>Refreshing UI basing on changes in the data model</li>
+</ul>
+{% endblock projcontent %}
+
+{% block platform %}
+Android
+{% endblock %}
+{% block languages %}
+Java, XML, JSON
+{% endblock %}
+{% block libraries %}
+Android Standard API
+{% endblock %}

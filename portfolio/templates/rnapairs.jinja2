@@ -1,6 +1,25 @@
-{% extends "projects.jinja2" %}
+{% extends "subproject.jinja2" %}
 {% block projtitle %}RNA Pairs{% endblock %}
 
 {% block projcontent %}
-Command-line Application for analysis of three dimensional structures of RNA chain fragments and a web application for browsing and displaying the results. 
+Command-line application for analysis of three dimensional structures of RNA chain fragments and a web application for browsing and displaying the results.
+<br /><br />
+<h5>Highlights / Key Challenges</h5>
+<ul>
+<li>Acquiring large amounts of input data either locally or remotely via internet</li>
+<li>Organizing and analyzing said data - parallel implementation of RMSD calculation algorithm, clustering structures by their relative RMSD values</li>
+<li>Creation of a web application allowing for visualising and customising visualisation parameters</li>
+<li>Classification of interactions (contacts) between RNA fragments</li>
+<li>Using the contact data for generation of secondary structures - images / diagrams</li>
+</ul>
 {% endblock projcontent %}
+
+{% block platform %}
+Unix / Windows / Mac
+{% endblock %}
+{% block languages %}
+Python, HTML5, CSS, JavaScript
+{% endblock %}
+{% block libraries %}
+NumPy, SciPy, BioPython, cctbx, Django, jQuery, VARNA
+{% endblock %}

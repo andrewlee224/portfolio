@@ -1,0 +1,23 @@
+{% extends "subproject.jinja2" %}
+{% block projtitle %}Signal Monitor{% endblock %}
+
+{% block projcontent %}
+Mobile application allowing for real-time charting of biomedical signals.
+<br /><br />
+<h5>Highlights / Key Challenges</h5>
+<ul>
+<li>Asynchronuous loading of data</li>
+<li>Managing limited system resources to assure application responsiveness - redrawing graph frames requires a relatively big amount of system resources</li>
+<li>Establishing wireless connection between devices</li>
+</ul>
+{% endblock projcontent %}
+
+{% block platform %}
+Android
+{% endblock %}
+{% block languages %}
+Java, XML
+{% endblock %}
+{% block libraries %}
+Android Standard API, AChartEngine
+{% endblock %}

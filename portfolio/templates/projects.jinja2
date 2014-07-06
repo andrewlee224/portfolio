@@ -5,19 +5,21 @@
 <!-- Project menu -->
 <div class="col-sm-3">
   <div class="list-group">
-    <a href="#" class="list-group-item">RNA Pairs</a>
-    <a href="#" class="list-group-item">Invest.py</a>
-    <a href="#" class="list-group-item">Bandmates</a>
-    <a href="#" class="list-group-item">Signal Monitor</a>
-    <a href="#" class="list-group-item">Drug Scheduler</a>
+    <a href="{{ request.route_url('rnapairs') }}" class="list-group-item">RNA Pairs</a>
+    <a href="{{ request.route_url('usgviewer') }}" class="list-group-item">USG Viewer</a>
+    <a href="{{ request.route_url('signalmonitor') }}" class="list-group-item">Signal Monitor</a>
+    <a href="{{ request.route_url('drugscheduler') }}" class="list-group-item">Drug Scheduler</a>
   </div>
 </div>
 <!-- End project menu -->
 {% endblock sidemenu %}
 
 {% block content %}
-<div class="col-sm-9">
-    <div class="section-title">{% block projtitle %}My projects{% endblock %}</div>
+<div class="col-sm-6">
+    <div class="section-title">{% block projtitle %}My Projects{% endblock %}</div>
     {% block projcontent %}Here you can find descriptions of projects I have completed.{% endblock %}
 </div>
+{% block rightbar %}
+{% endblock rightbar %}
+
 {% endblock content %}

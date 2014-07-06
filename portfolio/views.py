@@ -13,6 +13,18 @@ def about(request):
 def rnapairs(request):
     return {}
 
+@view_config(route_name='usgviewer', renderer='templates/usgviewer.jinja2')
+def usgviewer(request):
+    return {}
+
+@view_config(route_name='signalmonitor', renderer='templates/signalmonitor.jinja2')
+def signalmonitor(request):
+    return {}
+
+@view_config(route_name='drugscheduler', renderer='templates/drugscheduler.jinja2')
+def drugscheduler(request):
+    return {}
+
 @notfound_view_config(append_slash=True)
 def notFound(request):
     return HTTPNotFound("404 Error. Sorry, page not found.")

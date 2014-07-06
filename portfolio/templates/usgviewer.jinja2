@@ -1,0 +1,23 @@
+{% extends "subproject.jinja2" %}
+{% block projtitle %}USG Viewer{% endblock %}
+
+{% block projcontent %}
+Mobile application allowing for viewing USG (ultrasound) image data stored in binary files.
+<br /><br />
+<h5>Highlights / Key Challenges</h5>
+<ul>
+<li>Parsing the binary file containing USG data</li>
+<li>Managing limited system resources to assure application responsiveness</li>
+<li>Support for time-series USG images</li>
+</ul>
+{% endblock projcontent %}
+
+{% block platform %}
+Android
+{% endblock %}
+{% block languages %}
+Java, XML
+{% endblock %}
+{% block libraries %}
+Android Standard API
+{% endblock %}
