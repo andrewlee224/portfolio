@@ -3,7 +3,7 @@
 
 {% block sidemenu %}
 <!-- Project menu -->
-<div class="col-sm-3">
+<div class="col-sm-3 text-info">
   <div class="list-group">
     <a href="{{ request.route_url('rnapairs') }}" class="list-group-item">RNA Pairs</a>
     <a href="{{ request.route_url('usgviewer') }}" class="list-group-item">USG Viewer</a>
@@ -16,8 +16,9 @@
 
 {% block content %}
 <div class="col-sm-6">
-    <div class="section-title">{% block projtitle %}My Projects{% endblock %}</div>
-    {% block projcontent %}Here you can find descriptions of projects I have completed.{% endblock %}
+    {% block beforetitle %}{% endblock %}
+    <div class="section-title">{% block projtitle %}{% endblock %}</div>
+    {% block projcontent %}{% endblock %}
 </div>
 {% block rightbar %}
 {% endblock rightbar %}

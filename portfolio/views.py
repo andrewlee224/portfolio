@@ -1,7 +1,7 @@
 from pyramid.view import view_config, notfound_view_config
 from pyramid.httpexceptions import HTTPNotFound
 
-@view_config(route_name='projects', renderer='templates/projects.jinja2')
+@view_config(route_name='projects', renderer='templates/mainprojects.jinja2')
 def index(request):
     return {'project': 'Portfolio'}
     
