@@ -1,1 +1,1 @@
-web: gunicorn -b 0.0.0.0:8080 wsgi:application
+web: gunicorn --paste production.ini -b :8080 --chdir ./
