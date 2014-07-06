@@ -4,10 +4,12 @@
 {% block projcontent %}
 Mobile application allowing for real-time charting of biomedical signals.
 <br /><br />
+<p><img src="{{ request.static_url('portfolio:static/img/signalmonitor.png') }}" class="center-block img-thumbnail" /></p>
 <h5>Highlights / Key Challenges</h5>
 <ul>
 <li>Asynchronuous loading of data</li>
 <li>Managing limited system resources to assure application responsiveness - redrawing graph frames requires a relatively big amount of system resources</li>
+<li>Concurrent display of multiple (up to 4) channels</li>
 <li>Establishing wireless connection between devices</li>
 </ul>
 {% endblock projcontent %}
