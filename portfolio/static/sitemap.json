@@ -1,0 +1,20 @@
+{
+    "name": "here",
+    "path": "/",
+    "children": [
+        {
+            "name": "projects",
+            "path": "/projects/",
+            "children": [
+                { "name": "rna pairs", "path": "/projects/rnapairs/" },
+                { "name": "usg viewer", "path": "/projects/usgviewer/" },
+                { "name": "signal monitor", "path": "/projects/signalmonitor/" },
+                { "name": "drug scheduler", "path": "/projects/drugscheduler/" }
+            ]
+        },
+        {
+            "name": "about",
+            "path": "/about/"
+        }
+    ]
+}
