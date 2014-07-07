@@ -8,6 +8,7 @@ def main(global_config, **settings):
     config.include('pyramid_jinja2')
     config.add_static_view('static', 'static', cache_max_age=3600)
 
+    config.add_route('root', '/')
     config.add_route('projects', '/projects/')
     config.add_route('about', '/about/')
     config.add_route('contact', '/contact/')

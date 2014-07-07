@@ -5,6 +5,10 @@ from pyramid.httpexceptions import HTTPNotFound
 def index(request):
     return {'project': 'Portfolio'}
     
+@view_config(route_name='root', renderer='templates/root.jinja2')
+def root(request):
+    return {}
+
 @view_config(route_name='about', renderer='templates/about.jinja2')
 def about(request):
     return {}
