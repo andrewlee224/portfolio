@@ -13,6 +13,14 @@ def root(request):
 def about(request):
     return {}
 
+@view_config(route_name='this', renderer='templates/this.jinja2')
+def this(request):
+    return {}
+
+@view_config(route_name='contact', renderer='templates/contact.jinja2')
+def contact(request):
+    return {}
+
 @view_config(route_name='rnapairs', renderer='templates/rnapairs.jinja2')
 def rnapairs(request):
     return {}

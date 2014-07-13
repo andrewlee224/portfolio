@@ -11,7 +11,8 @@ def main(global_config, **settings):
     config.add_route('root', '/')
     config.add_route('projects', '/projects/')
     config.add_route('about', '/about/')
-    config.add_route('contact', '/contact/')
+    config.add_route('this', '/about/this/')
+    config.add_route('contact', '/about/contact/')
 
     # Projects subpages
     config.add_route('rnapairs', '/projects/rnapairs/')
