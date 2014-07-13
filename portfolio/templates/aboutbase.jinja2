@@ -1,0 +1,18 @@
+{% extends "base.jinja2" %}
+
+{% block content %}
+<div class="row">
+    <!-- About menu -->
+    <div class="col-md-3 text-info">
+      <div class="list-group">
+        <a href="{{ request.route_url('this') }}" class="list-group-item">this website</a>
+        <a href="{{ request.route_url('contact') }}" class="list-group-item">contact info</a>
+      </div>
+    </div>
+    <!-- End about menu -->
+
+    <div class="col-md-6">
+    {% block aboutcontent %}{% endblock %}
+    </div>
+</div>
+{% endblock content %}
