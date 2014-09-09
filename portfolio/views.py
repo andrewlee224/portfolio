@@ -37,6 +37,11 @@ def signalmonitor(request):
 def drugscheduler(request):
     return {}
 
+@view_config(route_name='distsemaphore', renderer='templates/distsemaphore.jinja2')
+def distsemaphore(request):
+    return {}
+
+
 @notfound_view_config(append_slash=True)
 def notFound(request):
     return HTTPNotFound("404 Error. Sorry, page not found.")

@@ -1,0 +1,24 @@
+{% extends "subproject.jinja2" %}
+{% block projtitle %}Distributed Semaphore{% endblock %}
+
+{% block projcontent %}
+A semaphore is a software component responsible for regulating access to some limited resource. Examples of such limited resources include things like database connections, or computation cluster slots. Semaphore restricts the total number of clients using such resource. 'Distributed' means that it can be used across computer networks, not only in a local context.
+<br /><br />
+<h5>Highlights / Key Challenges</h5>
+<ul>
+<li>Managing race conditions by employing memcached CAS (Compare-And-Set) operations</li>
+</ul>
+{% endblock projcontent %}
+
+{% block platform %}
+Linux, Mac OS, Windows
+{% endblock %}
+{% block languages %}
+Python, Memcached
+{% endblock %}
+{% block libraries %}
+pylibmc
+{% endblock %}
+{% block extrarightbar %}
+<p><h5>Source code:</h5></p><p><a href="https://github.com/andrewlee224/dist-semaphore/">https://github.com/andrewlee224/dist-semaphore/</a></p>
+{% endblock %}

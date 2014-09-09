@@ -6,10 +6,11 @@
             "name": "projects",
             "path": "/projects/",
             "children": [
-                { "name": "rna pairs", "path": "/projects/rnapairs/" },
-                { "name": "usg viewer", "path": "/projects/usgviewer/" },
-                { "name": "signal monitor", "path": "/projects/signalmonitor/" },
-                { "name": "drug scheduler", "path": "/projects/drugscheduler/" }
+                { "name": "rna pairs", "path": "/projects/rna-pairs/" },
+                { "name": "distributed semaphore", "path": "/projects/distributed-semaphore/" },
+                { "name": "usg viewer", "path": "/projects/usg-viewer/" },
+                { "name": "signal monitor", "path": "/projects/signal-monitor/" },
+                { "name": "drug scheduler", "path": "/projects/drug-scheduler/" }
             ]
         },
         {

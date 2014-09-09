@@ -15,10 +15,11 @@ def main(global_config, **settings):
     config.add_route('contact', '/about/contact/')
 
     # Projects subpages
-    config.add_route('rnapairs', '/projects/rnapairs/')
-    config.add_route('signalmonitor', '/projects/signalmonitor/')
-    config.add_route('drugscheduler', '/projects/drugscheduler/')
-    config.add_route('usgviewer', '/projects/usgviewer/')
+    config.add_route('rnapairs', '/projects/rna-pairs/')
+    config.add_route('signalmonitor', '/projects/signal-monitor/')
+    config.add_route('drugscheduler', '/projects/drug-scheduler/')
+    config.add_route('usgviewer', '/projects/usg-viewer/')
+    config.add_route('distsemaphore', '/projects/distributed-semaphore/')
 
     config.scan()
     return config.make_wsgi_app()
